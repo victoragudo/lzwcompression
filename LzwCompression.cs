@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+
+
 public static class Extensions
 {
     public static string LzwDecode(this string s)
@@ -30,6 +34,7 @@ public static class Extensions
         }
         return string.Join("", _out);
     }
+
     public static string LzwEncode(this string s)
     {
         if (!string.IsNullOrWhiteSpace(s))
